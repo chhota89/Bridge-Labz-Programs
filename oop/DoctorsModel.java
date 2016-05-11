@@ -30,7 +30,7 @@ public class DoctorsModel{
 		this.specialization=utility.inputWord();
 		System.out.println();
 
-		System.out.print("Enter availability: ");
+		System.out.print("Enter availability (1:AM   2:PM  3:both)");
 		this.availability=utility.inputWord();
 		System.out.println();
 	}

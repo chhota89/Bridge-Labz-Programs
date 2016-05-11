@@ -57,5 +57,10 @@ public class DoctorAppointmentModel{
 			return false;
 	}
 
+	@Override
+	public String toString(){
+		return " "+doctorId+" "+appointmentDate;
+	}
+
 
 }

@@ -17,9 +17,12 @@ public class StingToArray{
 	public static void main(String args[]){
 		String stringArray="A:10,B:20,C:20";
 		convertStringToIntArray(stringArray);
+		long startTime = System.nanoTime();    
 		HashMap<String,Integer> map=convertStringToIntArray(stringArray);
+		long endTime = System.nanoTime();    
 		//System.out.println(map.size());
 		new Utility().printMap(map);
+		System.out.println("Time in neno mili second"+(endTime-startTime));
 	}
 
 	public static HashMap<String,Integer> convertStringToIntArray(String stringArray){

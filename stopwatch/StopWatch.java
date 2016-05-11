@@ -1,5 +1,15 @@
 package com.bridgelabz.stopwatch;
 
+
+/*
+
+* created by: Bridge Labz
+* Date 3/05/2016
+*
+* Perpose: Stopwatch Program for measuring the time that elapses between the start and end clicks
+
+**/
+
 import com.bridgelabz.utility.Utility;
 
 public class StopWatch{

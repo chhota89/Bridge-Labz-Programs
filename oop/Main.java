@@ -53,6 +53,7 @@ public class Main{
 		System.out.println("5: Display all Doctors detils");
 		System.out.println("6: Display all Patient detils");
 		System.out.println("7: Take Appoientment");
+		System.out.println("8: Print Appoientment");
 		System.out.println("Enter Your Choice");
 		mainObject.menuChoice(mainObject.utility.inputInteger());
 		System.out.println("Enter E to Exit");
@@ -83,6 +84,8 @@ public class Main{
 				System.out.println();
 				break;
 		case 7: takeAppoientment();
+				break;
+		case 8: utility.printMap(appoientment);
 				break;	
 		}
 	}

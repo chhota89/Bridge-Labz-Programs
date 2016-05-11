@@ -1,5 +1,14 @@
 package com.bridgelabz.model;
 
+/*
+
+* created by: Bridge Labz
+* Date 05/05/2016
+*
+* Perpose: Model clss for storing stock detils.
+
+**/
+
 import com.bridgelabz.utility.Utility;
 public class Stock{
 
@@ -7,16 +16,12 @@ public class Stock{
 	private int stockPrice;
 	private int stockNumber;
 	Utility utility;
-	public Stock(String stockName){
+	public Stock(String stockName,int stockPrice,int stockNumber){
 		this.stockName=stockName;
-		utility=new Utility();
-
-		System.out.println("Enter stock Price:");
-		this.stockPrice=utility.inputInteger();
-
-		System.out.println("Enter stock Number:");
-		this.stockNumber=utility.inputInteger();
+		this.stockPrice=stockPrice;
+		this.stockNumber=stockNumber;
 	}
+	
 	public Stock(){
 	}
 

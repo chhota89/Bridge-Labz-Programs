@@ -1,4 +1,13 @@
 package com.bridgelabz.namereplacer;
+
+/*
+
+* created by: Bridge Labz
+* Date 3/05/2016
+*
+* Perpose: this rogram replace "UserName" with actual user name.
+
+**/
 import com.bridgelabz.utility.Utility;
 public class UserNameReplacer{
 

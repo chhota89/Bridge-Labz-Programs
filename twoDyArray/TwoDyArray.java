@@ -1,6 +1,10 @@
 package com.bridgelabz.printwriter;
 
 /*
+
+* created by: Bridge Labz
+* Date 3/05/2016
+
 Perpose: 1: This function will take 2D array as input.
 		2: And print the 2D array using PrintWriter.
 **/
@@ -16,7 +20,7 @@ public class TwoDyArray{
 		mArray=new int[m][n];
 		this.m=m;	
 		this.n=n;
-		printWriter=new PrintWriter(System.out,true);
+		mPrintWriter=new PrintWriter(System.out,true);
 		mUtility=new Utility();
 	}
 

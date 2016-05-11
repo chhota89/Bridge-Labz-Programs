@@ -6,7 +6,7 @@ package com.bridgelabz.utility;
 *
 * Perpose: Putting Commonly used function in single file.
 	1 function to take word,integer and double as input
-	2: function to read and write file.
+	2: function to read file.
 	3 function to match regex from string and replace with user details	 
 
 **/
@@ -27,8 +27,6 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
-import java.io.File;
-import java.io.FileWriter;
 import com.bridgelabz.utility.SortingFunction;
 
 public class Utility{
@@ -193,21 +191,6 @@ public class Utility{
 			catch(IOException exception){
 			}	
 		}
-	}
-	
-	//this function take two parameter 
-	// 1 what data to write.
-	// 2 file name
-	public void writeToFile(String data,String fileName)throws Exception{
-		File file = new File(fileName);
-		if (!file.exists()) {
-			file.createNewFile();
-		}
-		FileWriter writer = new FileWriter(file); 
-       // Writes the content to the file
-       writer.write(data); 
-       writer.flush();
-       writer.close();
 	}
 
 	public void printMap(Map mp) {

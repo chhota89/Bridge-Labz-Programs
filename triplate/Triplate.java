@@ -1,4 +1,15 @@
 package com.bridgelabz.triplate;
+
+
+/*
+
+* created by: Bridge Labz
+* Date 4/05/2016
+*
+* Perpose: Find distinct triples (i, j, k) such that a[i] + a[j] + a[k] = 0
+
+**/
+
 import com.bridgelabz.utility.Utility;
 import com.bridgelabz.utility.SortingFunction;
 public class Triplate{

@@ -1,6 +1,6 @@
-relience 
-bsnl
-tata
-docomo
-bridge labz
-Microlucid 
+relience 50 300
+bsnl 20 400
+tata 10 350
+docomo 5 55
+bridge labz 77 10
+Microlucid 74 12
