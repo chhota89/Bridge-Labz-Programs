@@ -20,6 +20,8 @@ public class QueueDemo{
 		withdrawQueue=new Queue<Integer>();
 		depositeQueue=new Queue<Integer>();
 	}
+
+	//Main methds to display the menu 
 	public static void main(String args[]){
 		QueueDemo queueDemo=new QueueDemo();
 		String exit=new String();
@@ -42,11 +44,12 @@ public class QueueDemo{
 					break;
 			case 3: System.out.println("withdraw Queue size is: "+withdrawQueue.size());
 					break;
-			case 4: System.out.println("Deposite Queue size is: "+depositeQueue.size());
+			case 4: System.out.println("withdraw Queue size is: "+depositeQueue.size());
 					break;
 		}
 	}
 
+	//Add or remove the user from the deposite queue.
 	public void Deposite(){
 		System.out.println();
 		System.out.println("1: Join In queue.");
@@ -68,6 +71,7 @@ public class QueueDemo{
 		}
 	}
 
+	//Add or remove the user from the withdraw queue.
 	public void Withdraw(){
 		System.out.println();
 		System.out.println("1: Join In queue.");

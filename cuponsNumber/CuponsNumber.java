@@ -46,10 +46,10 @@ public class CuponsNumber{
 		return how many random number require to genrate numberOfCupons cupons
 	**/
 	public int genrateDistictCupons(int numberOfCupons){
-		for(int i=0;i<numberOfCupons;i++){
+		while(mListOfCupons.size()!=numberOfCupons){
 			
 			int randomNumber=CuponsNumber.randomNumberGenrator();
-			System.out.print(randomNumber+" ");
+			//System.out.print(randomNumber+" ");
 			if(mListOfCupons.contains(randomNumber)){
 				mCounter++;
 			}
