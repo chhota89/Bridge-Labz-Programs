@@ -11,13 +11,8 @@ package com.bridgelabz.model;
 
 public class Node<E>{
 
-	//data veriable is used to store the data
 	private E data;
-
-	//Right is pointing to the next veriable in the link list
 	public Node right;
-
-	//left is pointing to the previous veriable in the link list
 	public Node left;
 
 	public Node(E data){
