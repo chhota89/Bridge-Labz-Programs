@@ -1,7 +1,6 @@
 package com.bridgelabz.oop;
 
 /*
-
 * created by: Bridge Labz
 * Date 6/05/2016
 *
@@ -10,9 +9,7 @@ package com.bridgelabz.oop;
 * It manages Patients by Name, ID, Mobile Number and Age. The Program allows users to search Doctor by name, id, Specialization or Availability. Also the programs allows users to search patient by name, mobile number or id.
 * The programs allows patients to take appointment with the doctor. A doctor at  any availability time can see only 5 patients. If exceeded the user can take appointment for patient at different date or availability time.
 * Print the Doctor Patient Report. Also show which Specialization is popular in the Clinique as well as which Doctor is popular.
-
  
-
 **/
 
 import java.util.ArrayList;
@@ -22,6 +19,8 @@ import com.bridgelabz.model.DoctorsModel;
 import com.bridgelabz.model.PatientsModel;
 import com.bridgelabz.model.DoctorAppointmentModel;
 import com.bridgelabz.utility.Utility;
+import java.util.Iterator;
+import java.util.Map;
 public class Main{
 
 	ArrayList<DoctorsModel> doctorList;
@@ -54,6 +53,8 @@ public class Main{
 		System.out.println("6: Display all Patient detils");
 		System.out.println("7: Take Appoientment");
 		System.out.println("8: Print Appoientment");
+		System.out.println("9: Print Popular Doctor");
+		System.out.println("10: Print Popular Specialization");
 		System.out.println("Enter Your Choice");
 		mainObject.menuChoice(mainObject.utility.inputInteger());
 		System.out.println("Enter E to Exit");
@@ -87,6 +88,16 @@ public class Main{
 				break;
 		case 8: utility.printMap(appoientment);
 				break;	
+		case 9: ArrayList<Integer> list=printPopularDoctor();
+				if(list.size()>0){
+					System.out.println("Famous doctor is :");
+					System.out.println(list);
+				}
+				else
+					System.out.println("No doctor is popular.");
+				break;
+		case 10: printPopularSpecialization();
+				break;
 		}
 	}
 
@@ -180,6 +191,7 @@ public class Main{
 					else{
 						//No appointment is there on given date
 						appoientment.put(newAppointment,1);
+						System.out.println("New Appoientment is assign to patient..............");
 					}
 				}
 			}
@@ -189,6 +201,59 @@ public class Main{
 			}
 		else{
 			System.out.println("Invalid Doctor Id");
+		}
+	}
+
+	//Doctor is famous if appoientment is more than 25% off all appoientment.
+	public ArrayList<Integer> printPopularDoctor(){
+		//find total appoientment.
+		ArrayList<Integer> list=new ArrayList<>();
+		int totalAppoientment = totalAppoientment();
+		HashMap<Integer,Integer> doctorMap=new HashMap<>();
+			Iterator it = appoientment.entrySet().iterator();
+    		while (it.hasNext()) {
+        		Map.Entry pair = (Map.Entry)it.next();
+        		int doctorId = ((DoctorAppointmentModel)pair.getKey()).getDoctorId();
+
+				if(doctorMap.containsKey(doctorId)){
+					//all ready appoient is there for that doctors
+					doctorMap.put(doctorId,doctorMap.get(doctorId)+1);
+				}
+				else{
+					doctorMap.put(doctorId,1);
+				}
+
+    		}
+
+		//Show the doctor whose appoientment is more then 25%
+		it = doctorMap.entrySet().iterator();
+    		while (it.hasNext()) {
+        		Map.Entry pair = (Map.Entry)it.next();
+				if((Integer)pair.getValue() >= ((Integer)(totalAppoientment/4)))
+					list.add(((Integer)pair.getKey()));
+    		}
+
+		return list;
+	}
+
+	public int totalAppoientment(){
+		int number=0;
+		Iterator it = appoientment.entrySet().iterator();
+    		while (it.hasNext()) {
+        		Map.Entry pair = (Map.Entry)it.next();
+        		number+= (Integer)pair.getValue();
+    		}
+		return number;
+	}
+
+	//Specialization is famous if having more appoientment.
+	public void printPopularSpecialization(){
+		ArrayList<integer> list= printPopularDoctor();
+		for(Integer doctorId: list){
+			for(DoctorList doctor:doctorList){
+				if(doctorId == doctor.getId())
+					System.out.println("Popular specializatin is :"+doctor.getSpecialization());
+			}
 		}
 	}
 }

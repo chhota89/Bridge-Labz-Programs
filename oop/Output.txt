@@ -1,0 +1,298 @@
+$ java com.bridgelabz.oop.Main
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+1
+
+Enter Doctors Details ...
+Enter Name: mohmad
+
+Enter Id: 12
+
+Enter specialization: patient
+
+Enter availability (1:AM   2:PM  3:both)3
+
+Enter E to Exit
+f5
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+5
+
+Id   Name  Specialization   availability
+[12     mohmad     patient     3
+]
+
+Enter E to Exit
+
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+7
+
+Enter Doctor Id
+12
+Enter Date of Appoientmentd (01/05/2016):
+01/01/2015
+New Appoientment is assign to patient..............
+Enter E to Exit
+9
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+10
+
+Popular specializatin is :patient
+Enter E to Exit
+d
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+7
+
+Enter Doctor Id
+12
+Enter Date of Appoientmentd (01/05/2016):
+01/01/2016
+New Appoientment is assign to patient..............
+Enter E to Exit
+8
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+8
+
+ 12 Fri Jan 01 00:00:00 IST 2016 = 1
+ 12 Thu Jan 01 00:00:00 IST 2015 = 1
+Enter E to Exit
+q
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+7
+
+Enter Doctor Id
+120
+Invalid Doctor Id
+Enter E to Exit
+
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+12
+
+Enter E to Exit
+
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+7
+
+Enter Doctor Id
+12
+Enter Date of Appoientmentd (01/05/2016):
+01/01/2016
+Appointment Schedule onFri Jan 01 00:00:00 IST 2016 with Doctor Id12
+Enter E to Exit
+8
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+8
+
+ 12 Fri Jan 01 00:00:00 IST 2016 = 2
+ 12 Thu Jan 01 00:00:00 IST 2015 = 1
+Enter E to Exit
+s
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+1
+
+Enter Doctors Details ...
+Enter Name: abc
+
+Enter Id: 13
+
+Enter specialization: orho dentiest
+
+Enter availability (1:AM   2:PM  3:both)3
+
+Enter E to Exit
+d
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+7
+
+Enter Doctor Id
+13
+Enter Date of Appoientmentd (01/05/2016):
+01/01/2016
+New Appoientment is assign to patient..............
+Enter E to Exit
+8
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+8
+
+ 12 Fri Jan 01 00:00:00 IST 2016 = 2
+ 13 Fri Jan 01 00:00:00 IST 2016 = 1
+ 12 Thu Jan 01 00:00:00 IST 2015 = 1
+Enter E to Exit
+7
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+10
+
+Popular specializatin is :patient
+Popular specializatin is :orho dentiest
+Enter E to Exit
+d
+Menu
+1: Enter Doctors Detials
+2: Enter Patients Detils
+3: Search Patients Detils
+4: Search Doctors Detils
+5: Display all Doctors detils
+6: Display all Patient detils
+7: Take Appoientment
+8: Print Appoientment
+9: Print Popular Doctor
+10: Print Popular Specialization
+Enter Your Choice
+9
+
+Famous doctor is :
+[12, 13]
+Enter E to Exit
+
