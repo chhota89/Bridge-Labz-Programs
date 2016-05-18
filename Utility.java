@@ -215,7 +215,6 @@ public class Utility{
     		while (it.hasNext()) {
         		Map.Entry pair = (Map.Entry)it.next();
         		System.out.println(pair.getKey() + " = " + pair.getValue());
-        		it.remove(); // avoids a ConcurrentModificationException
     		}
 	}
 }
